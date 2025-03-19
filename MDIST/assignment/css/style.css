@@ -65,13 +65,23 @@ header {
     color: red;
 }
 
+main {
+    background-image: linear-gradient(40deg, red, blue);
+    height: 30vh;
+}
+
+main h1 {
+    text-align: center;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
+    
+}
+
 footer {
     background: rgba(0, 0, 0, 0.7);
     text-align: center;
     color: white;
-    position: fixed;
-    width: 100vw;
-    bottom: 0;
     font-family: "Roboto", sans-serif;
     font-size: 10pt;
     padding: 15px;

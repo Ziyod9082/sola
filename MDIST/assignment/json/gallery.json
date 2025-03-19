@@ -1,0 +1,47 @@
+[
+    {
+        "src": "img/card/firewall.jpg",
+        "alt": "Firewall function",
+        "description": "Image 1: Firewall's function"
+    },
+    {
+        "src": "img/card/trojan.jpg",
+        "alt": "Trojan virus",
+        "description": "Image 2: Trojan virus"
+    },
+    {
+        "src": "img/card/wannacry.jpeg",
+        "alt": "WannaCry ransomware",
+        "description": "Image 3: Ransomware (WannaCry)"
+    },
+    {
+        "src": "img/card/statistics.jpg",
+        "alt": "WannaCry statistics",
+        "description": "Image 4: Statistics of WannaCry's spread"
+    },
+    {
+        "src": "img/card/phishing.jpg",
+        "alt": "Phishing attack",
+        "description": "Image 5: Phishing attack example"
+    },
+    {
+        "src": "img/card/ransomware.jpg",
+        "alt": "Ransomware type",
+        "description": "Image 6: Ransomware type"
+    },
+    {
+        "src": "img/card/specialist.jpeg",
+        "alt": "Cybersecurity specialist",
+        "description": "Image 7: Cybersecurity specialist"
+    },
+    {
+        "src": "img/card/antivirus.jpg",
+        "alt": "Antiviruses",
+        "description": "Image 8: Ativirus types"
+    },
+    {
+        "src": "img/card/2fa.jpg",
+        "alt": "Two-factor authentication",
+        "description": "Image 9: Two-factor authentication example"
+    }
+]
