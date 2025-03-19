@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    font-family: "Roboto", sans-serif;
+    font-weight: bolder;
+    font-size: 20pt;
+    cursor: pointer;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+}
+
+.white {
+    color: white;
+}
+.red {
+    color: red;
+}
+.blue {
+    color: dodgerblue;
+}
+
+.menu ul {
+    display: flex;
+    align-items: center;
+}
+
+.menu ul li {
+    padding: 0.5vh 1vh;
+    list-style-type: none;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 10pt;
+    font-family: "Orbitron", sans-serif;
+    font-weight: bolder;
+    position: relative;
+}
+
+.menu ul li a::after {
+    content: "";
+    background-color: red;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 0;
+}
+
+.menu ul li a:hover::after {
+    width: 100%;
+}
+.menu ul li a:hover {
+    color: red;
+}
+
+main {
+    background-color: ;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 10pt;
+    padding: 15px;
+}
+
