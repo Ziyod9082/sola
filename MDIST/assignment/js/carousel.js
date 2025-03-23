@@ -52,5 +52,4 @@ document.addEventListener("DOMContentLoaded", function(){ //ensure that script i
 
         updateCarousel();
     })
-    .catch(error => console.error('Error loading images:', error));
 });
