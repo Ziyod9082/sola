@@ -19,14 +19,12 @@
 
 header {
     background-color: #333;
-    position: fixed;
     width: 100vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 15px 20px;
     flex-wrap: nowrap;
-    z-index: 1000;
     top: 0;
     left: 0;
     right: 0;
@@ -83,8 +81,7 @@ header {
 
 main {
     background-image: linear-gradient(40deg, red, blue);
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-bottom: 80px;
 }
 
 main h1 {
@@ -115,7 +112,6 @@ footer {
     font-family: "Roboto", sans-serif;
     font-size: 10pt;
     padding: 15px;
-    position: fixed;
     bottom: 0;
     width: 100vw;
 }
@@ -171,18 +167,18 @@ footer {
 .carousel-container {
     width: 60%;
     text-align: center;
-    overflow: visible;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 550px;
+    height: auto;
 }
 
 .carousel {
     display: flex;
     transition: all 0.5s ease;
     width: 100%;
+    padding-top: 20px;
 }
 
 .carousel-img {
@@ -190,6 +186,7 @@ footer {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 10px;
 }
 
 .carousel-wrapper {
@@ -197,7 +194,6 @@ footer {
     align-items: center;
     justify-content: center;
     gap: 20px;
-    margin-top: 50px;
 }
 
 .carousel-btn {
@@ -226,8 +222,11 @@ footer {
 .pips-container {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 10px;
     width: 100%;
+    height: 20px;
+    position: relative;
 }
 
 .pip {
