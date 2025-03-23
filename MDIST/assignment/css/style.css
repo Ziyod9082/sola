@@ -1,3 +1,4 @@
+/* default values for each page*/
 * {
     padding: 0;
     margin: 0;
@@ -118,7 +119,9 @@ footer {
     bottom: 0;
     width: 100vw;
 }
+/*end of the default style for each page*/
 
+/*style of the 3x3 gallery page*/
 .gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -131,7 +134,6 @@ footer {
 .gallery-cont {
     display: flex;
     flex-direction: column;
-
 }
 
 .gallery-photo {
@@ -163,11 +165,13 @@ footer {
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
 }
+/*end of the style of the 3x3 gallery page*/
 
+/*style of the carousel page*/
 .carousel-container {
     width: 60%;
     text-align: center;
-    overflow: hidden;
+    overflow: visible;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -178,6 +182,7 @@ footer {
 .carousel {
     display: flex;
     transition: all 0.5s ease;
+    width: 100%;
 }
 
 .carousel-img {
@@ -206,7 +211,6 @@ footer {
     transition: all 0.1s ease;
 }
 
-
 .carousel-btn:hover {
     background-color: #333;
 }
@@ -223,6 +227,7 @@ footer {
     display: flex;
     justify-content: center;
     margin-top: 10px;
+    width: 100%;
 }
 
 .pip {
@@ -237,3 +242,4 @@ footer {
 .active {
     background-color: #333;
 }
+/*end of the style of carousel page/
