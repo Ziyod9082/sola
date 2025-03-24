@@ -115,7 +115,39 @@ footer {
     bottom: 0;
     width: 100vw;
 }
+
 /*end of the default style for each page*/
+
+/*style of the home page*/
+.welcome {
+    background-image: url("/MDIST/assignment/img/background/bckg.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+
+.home-banner {
+    text-align: center;
+    align-items: center;
+    color: white;
+    font-family: "Orbitron", sans-serif;
+    font-weight: bolder;
+}
+
+
+.firstline {
+    font-style: italic;
+    font-size: 18pt;
+}
+
+.name {
+    font-size: 24pt;
+}
+
+
+/*end of the style for home page*/
 
 /*style of the 3x3 gallery page*/
 .gallery {
@@ -160,6 +192,7 @@ footer {
     font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
 }
+
 /*end of the style of the 3x3 gallery page*/
 
 /*style of the carousel page*/
@@ -240,4 +273,5 @@ footer {
 .active {
     background-color: #333;
 }
+
 /*end of the style of carousel page/
