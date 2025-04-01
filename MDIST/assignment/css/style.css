@@ -119,33 +119,6 @@ footer {
 /*end of the default style for each page*/
 
 /*style of the home page*/
-.welcome {
-    background-image: url("/MDIST/assignment/img/background/bckg.webp");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    height: auto;
-}
-
-.home-banner {
-    text-align: center;
-    align-items: center;
-    color: white;
-    font-family: "Orbitron", sans-serif;
-    font-weight: bolder;
-}
-
-
-.firstline {
-    font-style: italic;
-    font-size: 18pt;
-}
-
-.name {
-    font-size: 24pt;
-}
-
 
 /*end of the style for home page*/
 

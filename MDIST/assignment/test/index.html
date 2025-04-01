@@ -1,66 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My CV</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My CV - John Doe</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <header class="header">
-      <div class="profile">
-        <img src="your-photo.jpg" alt="Profile Picture" class="profile-img">
-        <h1>John Doe</h1>
-        <p>Web Developer | Front-end Specialist</p>
-      </div>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <span class="red">John</span><span class="white">Doe</span>
+        </div>
+        <div class="navbar">
+            <nav class="menu">
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section class="about">
-      <h2>About Me</h2>
-      <p>I am a passionate web developer with over 5 years of experience in creating beautiful, user-friendly websites and applications. I specialize in front-end technologies, but I also have experience with back-end development.</p>
-    </section>
+    <!-- Main Content -->
+    <main>
+        <section id="about">
+            <h1>About Me</h1>
+            <p>I am a passionate web developer with expertise in front-end and back-end development, seeking new opportunities to grow and contribute.</p>
+        </section>
 
-    <section class="experience">
-      <h2>Experience</h2>
-      <ul>
-        <li>
-          <h3>Senior Web Developer</h3>
-          <p>Company Name | Jan 2020 - Present</p>
-          <p>Lead the development of web applications using React, HTML5, CSS3, and JavaScript. Collaborated with cross-functional teams to deliver high-quality products.</p>
-        </li>
-        <li>
-          <h3>Front-end Developer</h3>
-          <p>Company Name | Jun 2017 - Dec 2019</p>
-          <p>Worked on building responsive websites and user interfaces, focusing on improving user experience and accessibility.</p>
-        </li>
-      </ul>
-    </section>
+        <section id="experience">
+            <h2>Experience</h2>
+            <div class="job">
+                <h3>Software Developer | Company XYZ</h3>
+                <p>January 2022 - Present</p>
+                <ul>
+                    <li>Developed and maintained web applications using JavaScript, React, and Node.js</li>
+                    <li>Collaborated with cross-functional teams to deliver features on time</li>
+                    <li>Optimized website performance and scalability</li>
+                </ul>
+            </div>
+            <div class="job">
+                <h3>Web Developer | Company ABC</h3>
+                <p>June 2019 - December 2021</p>
+                <ul>
+                    <li>Designed and implemented user interfaces with HTML, CSS, and JavaScript</li>
+                    <li>Worked on multiple web applications, enhancing user experience</li>
+                    <li>Tested and debugged code to ensure smooth functionality</li>
+                </ul>
+            </div>
+        </section>
 
-    <section class="education">
-      <h2>Education</h2>
-      <ul>
-        <li>
-          <h3>Bachelor of Science in Computer Science</h3>
-          <p>University Name | 2013 - 2017</p>
-        </li>
-      </ul>
-    </section>
+        <section id="education">
+            <h2>Education</h2>
+            <div class="education">
+                <h3>Computer Science Degree | University of Tech</h3>
+                <p>Graduated: 2019</p>
+            </div>
+        </section>
 
-    <section class="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li>HTML5, CSS3, JavaScript</li>
-        <li>React, Vue.js</li>
-        <li>Node.js, Express</li>
-        <li>Git & GitHub</li>
-        <li>Responsive Design</li>
-      </ul>
-    </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>React, Node.js, Express</li>
+                <li>Database Management (MySQL, MongoDB)</li>
+                <li>Version Control (Git, GitHub)</li>
+                <li>Problem Solving and Debugging</li>
+            </ul>
+        </section>
 
-    <footer class="footer">
-      <p>Contact: john.doe@example.com | LinkedIn: linkedin.com/in/johndoe | GitHub: github.com/johndoe</p>
-    </footer>
-  </div>
-</body>
-</html>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:john.doe@example.com">john.doe@example.com</a></p>
+            <p>Phone: +123 456 7890</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/johndoe" target="_blank">linkedin.com/in/johndoe</a></p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        © 2025 John Doe. All rights reserved. Services are licensed
