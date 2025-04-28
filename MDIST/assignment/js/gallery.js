@@ -1,33 +1,40 @@
-document.addEventListener('DOMContentLoaded', function() { //ensure that script is running only after html and css
-    fetch('json/gallery.json') //getting array from json file
-    .then(response => response.json())
-    .then(data => { //assign the parsed json array to data variable
-        const container = document.getElementById('gallery'); //assign element with 'gallery' id to a variable 'container'
-        
-        data.forEach(item => { //getting each element from data variable (array)
-            const galleryItem = document.createElement('div'); //creating div element and assign it to a galleryItem variable
-            galleryItem.classList.add('gallery-cont'); //add this element to 'gallery-image' class
+document.addEventListener('DOMContentLoaded', function() {
+    fetch('json/gallery.json')
+        .then(response => response.json())
+        .then(data => {
+            const container = document.getElementById('gallery');
+            const fullViewContainer = document.createElement('div');
+            fullViewContainer.classList.add('full-view-container')
+            document.body.appendChild(fullViewContainer);
 
-            const galleryPhoto = document.createElement('div'); //create a div element for photos
-            galleryPhoto.classList.add('gallery-photo'); //assign it to class gallery-photo
-            const photoURL = document.createElement('a'); //creating 'a' element
-            photoURL.href = item.src; //assigning href attribute to the src attribute of the photo
-            photoURL.target = '_blank'; //open image in a new tab
- 
-            const photo = document.createElement('img'); //creating an img element
-            photo.src = item.src; //adding src and alt attributes to it
-            photo.alt = item.alt;
+            const fullViewImage = document.createElement('img');
+            fullViewImage.classList.add('full-view-image')
+            fullViewContainer.appendChild(fullViewImage);
 
-            const description = document.createElement('div'); //add new element div
-            description.classList.add('description'); //assign it to 'description' class
-            description.textContent = item.description; //create a text inside this div elements
+            fullViewContainer.addEventListener('click', function() {
+                fullViewContainer.style.display = 'none';
+            });
 
-            photoURL.appendChild(photo); //add photo to photoURL
-            galleryPhoto.appendChild(photoURL);
-            galleryItem.appendChild(galleryPhoto); //add photoURL to galleryItem
-            galleryItem.appendChild(description); //add description element to galleryItem
-            container.appendChild(galleryItem); //add galleryItem variable's content to container as a child
+            data.forEach(item => {
+                const galleryItem = document.createElement('div');
+                galleryItem.classList.add('gallery-cont');
+                const galleryPhoto = document.createElement('div');
+                galleryPhoto.classList.add('gallery-photo');
+                const photo = document.createElement('img');
+                photo.src = item.src;
+                photo.alt = item.alt;
+                const description = document.createElement('div');
+                description.classList.add('description');
+                description.textContent = item.description;
+                galleryPhoto.appendChild(photo);
+                galleryItem.appendChild(galleryPhoto);
+                galleryItem.appendChild(description);
+                container.appendChild(galleryItem);
+
+                photo.addEventListener('click', function() {
+                    fullViewImage.src = item.src;
+                    fullViewContainer.style.display = 'flex';
+                });
+            });
         });
-    })
-
 });
